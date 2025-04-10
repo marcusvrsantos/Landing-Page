@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url("header.css");
+@import url("home.css");
+@import url("exames.css");
+@import url("equipe.css");
+@import url("localidades.css");
+@import url("formulario.css");
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+}
+
+body {
+    background-color: #ADD8E6;
+    background-image: url(../images/fundosaude.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+.btn-default {
+    background-color: #87CEFA;
+    color: #1d1d1d;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color .3s ease;
+    text-decoration: none;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.btn-default:hover {
+    background-color: #B3C7E6;
+}
+
+
+.social-media-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #87CEFA;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #1d1d1d;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .3s ease;
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    padding: 28px 8%;
+    background-image: url('src/images/fundosaude.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+  #main_footer {
+    background-color: #CDE9F6;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #333;
+    border-top: 1px solid #e0dccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+

@@ -1,0 +1,56 @@
+#locais {
+    padding: 60px 8%;
+    text-align: center;
+    padding-bottom: 100px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+#locais h2 {
+    font-size: 2.5rem;
+    color: #3b3b3b;
+    margin-bottom: 16px;
+}
+
+#locais .section-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.locais-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.local-card {
+    background-color: #f1f9ff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.local-card:hover {
+    transform: translateY(-5px);
+}
+
+.local-card i {
+    font-size: 2.5rem;
+    color: #0077cc;
+    margin-bottom: 16px;
+}
+
+.local-card h3 {
+    font-size: 1.4rem;
+    color: #2b2b2b;
+    margin-bottom: 8px;
+}
+
+.local-card p {
+    font-size: 1rem;
+    color: #555;
+}
