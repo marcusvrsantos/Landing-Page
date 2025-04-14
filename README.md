@@ -11,8 +11,6 @@ A Clínica Vita oferece diversos serviços na área da saúde, incluindo:
 - Aconselhamento nutricional
 - Procedimentos especializados
 
-Este projeto corresponde à **primeira entrega** solicitada, que consiste em uma landing page com foco na apresentação institucional e de serviços.
-
 ## 📌 Funcionalidades e Estrutura da Página
 
 A landing page estática desenvolvida possui os seguintes elementos obrigatórios:
@@ -38,4 +36,33 @@ A landing page estática desenvolvida possui os seguintes elementos obrigatório
 - Organização modular dos estilos por seções
 
 ## 🗂️ Organização do Projeto
+
+📁 clinica-vita-landing-page ├── index.html ├── css/ │ ├── style.css │ ├── header.css │ ├── home.css │ ├── sobre.css │ ├── servicos.css │ ├── equipe.css │ ├── contato.css │ └── footer.css ├── imagens/ │ ├── equipe/ │ ├── servicos/ │ └── fundosaude.png └── README.md
+
+
+## 🚀 Como Executar o Projeto
+
+Você pode visualizar o projeto de duas formas:
+
+### ✅ 1. Acessando a versão publicada
+
+Acesse a landing page diretamente pelo GitHub Pages:
+
+👉 **[https://marcusvrsantos.github.io/clinica-vita-landing-page](https://marcusvrsantos.github.io/clinica-vita-landing-page)**
+
+---
+
+### 💻 2. Executando localmente
+
+Se preferir rodar localmente, siga os passos abaixo:
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/marcusvrsantos/clinica-vita-landing-page.git
+
+
+👨‍💻 Desenvolvedor
+
+Desenvolvido por Marcus
+🔗 GitHub - @marcusvrsantos
 
