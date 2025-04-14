@@ -35,10 +35,6 @@ A landing page estática desenvolvida possui os seguintes elementos obrigatório
 - Responsividade para dispositivos móveis
 - Organização modular dos estilos por seções
 
-## 🗂️ Organização do Projeto
-
-📁 clinica-vita-landing-page ├── index.html ├── css/ │ ├── style.css │ ├── header.css │ ├── home.css │ ├── sobre.css │ ├── servicos.css │ ├── equipe.css │ ├── contato.css │ └── footer.css ├── imagens/ │ ├── equipe/ │ ├── servicos/ │ └── fundosaude.png └── README.md
-
 
 ## 🚀 Como Executar o Projeto
 
@@ -60,9 +56,4 @@ Se preferir rodar localmente, siga os passos abaixo:
    ```bash
    git clone https://github.com/marcusvrsantos/clinica-vita-landing-page.git
 
-
-👨‍💻 Desenvolvedor
-
-Desenvolvido por Marcus
-🔗 GitHub - @marcusvrsantos
 
