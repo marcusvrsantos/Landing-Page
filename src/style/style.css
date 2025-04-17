@@ -6,10 +6,9 @@
 @import url("localidades.css");
 @import url("formulario.css");
 
-
 html {
     scroll-behavior: smooth;
-  }
+}
 
 * {
     margin: 0;
@@ -19,14 +18,67 @@ html {
 }
 
 body {
-    background-color: #ADD8E6;
-    background-image: url(../images/fundosaude.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+    background-color: #e6f7ff;
+    background-image: linear-gradient(to bottom, #e6f7ff, #ffffff);
 }
 
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 8%;
+    z-index: 999;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+#nav_logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #1d1d1d;
+}
+
+#nav_list {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+#nav_list .nav-item a {
+    text-decoration: none;
+    color: #1d1d1d;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+#nav_list .nav-item a:hover {
+    color: #409bd2;
+}
+
+.nav-buttons .btn-entrar {
+    background-color: transparent;
+    color: #3b3b3b;
+    border: 2px solid #3b3b3b;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.nav-buttons .btn-entrar:hover {
+    background-color: #3b3b3b;
+    color: #fff;
+}
 
 .btn-default {
     background-color: #87CEFA;
@@ -52,6 +104,7 @@ body {
 .social-media-buttons {
     display: flex;
     gap: 18px;
+    margin-top: 16px;
 }
 
 .social-media-buttons a {
@@ -73,16 +126,16 @@ body {
     box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
 }
 
+
 section {
-    padding: 28px 8%;
-    background-image: url('src/images/fundosaude.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 100px 8% 60px; 
+    background-image: url('../images/so-white.png');
+    background-repeat: repeat;
+    background-size: 200px;
     background-position: center;
 }
 
-
-  #main_footer {
+#main_footer {
     background-color: #CDE9F6;
     text-align: center;
     padding: 20px;
@@ -94,5 +147,3 @@ section {
     align-items: center;
     flex-direction: column;
 }
-
-

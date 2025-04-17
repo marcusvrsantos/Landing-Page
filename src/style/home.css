@@ -2,12 +2,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 5%;
-    padding-top: 100px;
+    padding: 100px 5% 40px; 
     min-height: 100vh;
     gap: 40px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    background-image: url('../images/so-white.png');
+    background-repeat: repeat;
+    background-size: auto;
 }
+
 
 #cta {
     flex: 1 1 40%;
@@ -17,17 +20,20 @@
     min-width: 300px;
 }
 
+
 #cta .title {
     font-size: 3.5rem;
     color: #3b3b3b;
     line-height: 1.2;
 }
 
+
 #cta .description {
     font-size: 1.8rem;
     color: #555;
     line-height: 1.4;
 }
+
 
 #cta_buttons {
     display: flex;
@@ -45,23 +51,26 @@
     align-items: center;
     gap: 8px;
     background-color: #51b7e6;
-    padding: 8px 14px;
+    padding: 10px 18px;
     font-weight: 500;
     color: #1d1d1dad;
     border-radius: 12px;
-    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
     text-decoration: none;
     white-space: nowrap;
-    transition: all 0.2s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn-default:hover {
     background-color: #b7d9ec;
+    transform: translateY(-2px);
 }
+
 
 #phone_button button {
     box-shadow: none;
 }
+
 
 #banner {
     flex: 1 1 50%;
@@ -69,14 +78,34 @@
     align-items: center;
     justify-content: center;
     min-width: 300px;
+    position: relative; 
+    background-size: cover;
+    background-position: center;
+    opacity: 1; 
+}
+
+#banner::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('../images/medico.banner.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.4;
+    z-index: 0;
+    pointer-events: none;
 }
 
 #banner img {
+    position: relative;
+    z-index: 1; 
     border-radius: 24px;
     max-width: 100%;
-    max-height: 600px;  
+    max-height: 600px;
     height: auto;
-    object-fit: contain; 
+    object-fit: contain;
 }
 
 
@@ -88,5 +117,13 @@
 
     #cta, #banner {
         width: 100%;
+    }
+
+    #cta .title {
+        font-size: 2.5rem;
+    }
+
+    #cta .description {
+        font-size: 1.3rem;
     }
 }

@@ -7,9 +7,11 @@ header {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+
 #content {
     padding-top: 100px;
 }
+
 
 #navbar {
     position: fixed;
@@ -26,6 +28,7 @@ header {
     z-index: 999;
 }
 
+
 #nav_logo {
     display: flex;
     align-items: center;
@@ -33,7 +36,9 @@ header {
     font-size: 1.8rem;
     color: #3b3b3b;
     font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.05);   
 }
+
 
 #nav_list {
     display: flex;
@@ -41,21 +46,38 @@ header {
     gap: 48px;
 }
 
-.nav-item a {
+#nav_list .nav-item a {
+    position: relative;
+    padding-bottom: 4px;
     text-decoration: none;
-    color: #1d1d1dad;
+    color: #333;
     font-weight: 600;
+    transition: color 0.3s;
 }
 
-.nav-item a:hover {
+#nav_list .nav-item a:hover {
     color: #3b3b3b;
     border-bottom: 2px solid #3b3b3b;
 }
 
-.nav-item.active a {
+#nav_list .nav-item.active a,
+#nav_list .nav-item a.active {
     color: #1d1d1dad;
     border-bottom: 3px solid #3b3b3b;
 }
+
+
+nav a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #0077cc;
+    border-radius: 2px;
+}
+
 
 .nav-buttons {
     display: flex;
@@ -63,7 +85,7 @@ header {
 }
 
 .btn-entrar {
-    background-color: #51b7e6;
+    background-color: transparent;
     color: #3b3b3b;
     border: 2px solid #3b3b3b;
     padding: 10px 18px;
@@ -74,32 +96,33 @@ header {
 }
 
 .btn-entrar:hover {
-    background-color: #b7d9ec;
-    color: #3b3b3b;
+    background-color: #3b3b3b;
+    color: #fff;
 }
 
-nav a {
-    position: relative;
-    transition: color 0.3s ease;
-  }
-  
-  nav a.active::after {
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #0077cc;
-    border-radius: 2px;
-  }
-  
-
-#nav_list .nav-item a {
-    position: relative;
-    padding-bottom: 4px;
+.btn-saiba-mais {
+    background-color: transparent;
+    color: #3b3b3b;
+    border: 2px solid #3b3b3b;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
     text-decoration: none;
-    color: #333;
-    transition: color 0.3s;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #3b3b3b;
+    color: #fff;
+}
+
+.btn-entrar,
+.btn-saiba-mais {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1;
+    letter-spacing: 0.5px;
 }
 

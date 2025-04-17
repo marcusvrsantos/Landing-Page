@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
-    <link rel="stylesheet" href="src/style/style.css">
-       
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clínica Vita</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+
+    <link rel="stylesheet" href="src/style/style.css" />
 </head>
 <body>
+
+
     <header>
         <nav id="navbar">
             <div id="nav_logo">
@@ -19,94 +21,67 @@
             </div>           
 
             <ul id="nav_list">
-                <li class="nav-item">
-                    <a href="#home">Início</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#exames">Exames e Consultas</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#equipe">Equipe Médica</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#locais">Localidades</a>
-                </li>
+                <li class="nav-item"><a href="#home">Início</a></li>
+                <li class="nav-item"><a href="#exames">Exames e Consultas</a></li>
+                <li class="nav-item"><a href="#equipe">Equipe Médica</a></li>
+                <li class="nav-item"><a href="#locais">Localidades</a></li>
             </ul>
 
             <div class="nav-buttons">
                 <button class="btn-entrar">Entrar</button>
-            </div>
-            
-       </nav>
+                <a href="#formulario" class="btn-saiba-mais">Saiba mais</a>
+              </div>
+        </nav>
+    </header>
 
-   </header>
-
-   <main id="content">
+ 
+    <main id="content">
         <section id="home">
-          <div class="shape"></div>
+            <div class="shape"></div>
             <div id="cta">
-                <h1 class="title">
-                   Clínica Vita. Sua saúde, nosso cuidado! 
-                </h1>
-
+                <h1 class="title">Clínica Vita. Sua saúde, nosso cuidado!</h1>
                 <p class="description" style="text-align: justify;">
-                    Na Clínica Vita, você encontra um ambiente acolhedor, profissionais experientes e dedicados e tratamentos modernos, tudo para que você se sinta bem cuidado e confiante cada dia mais.
+                    Na Clínica Vita você encontra um ambiente acolhedor, profissionais experientes e dedicados e tratamentos modernos, tudo para que você se sinta bem cuidado e confiante cada dia mais.
                 </p>
 
                 <div id="cta_buttons">
-                    <a href="a" class="btn-default">
-                        Ver Exames e Consultas
-                    </a>
-                    
+                    <a href="#exames" class="btn-default">Ver Exames e Consultas</a>
                     <a href="tel:+55555555" class="btn-default" id="phone_button">
                         <i class="fa-solid fa-phone"></i> (55) 55555-5555
-                    </a>                   
+                    </a>
                 </div>
 
                 <div class="social-media-buttons">
-                    <a href="">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-
-                    <a href="">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a href="">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 </div>
-
             </div>
 
             <div id="banner">
                 <img src="src/images/logomarca1.png" alt="banner da clínica">
-
             </div>
         </section>
 
         <section id="exames">
-            <h2>Exames e Consultas</h2>
+            <h2><i class="fa-solid fa-stethoscope"></i> Exames e Consultas</h2>
             <p class="section-description">
                 Conheça alguns dos principais serviços oferecidos pela Clínica Vita com excelência e cuidado.
             </p>
-        
+
             <div class="exames-container">
                 <div class="exame-card">
-                    <img src="src/images/imagem5.jpg" alt="Exame de sangue">
-                    <h3>Exame de Sangue</h3>
+                    <img src="src/images/imagem5.jpg" alt="Exames Laboratoriais">
+                    <h3>Exames Laboratoriais</h3>
                     <p>Realizamos exames laboratoriais completos com resultados rápidos e precisos.</p>
                 </div>
-        
+
                 <div class="exame-card">
                     <img src="src/images/imagem7.png" alt="Exame de imagem">
                     <h3>Exames de Imagem</h3>
                     <p>Equipamentos modernos para ultrassonografia, raio-x e outros exames de imagem.</p>
                 </div>
-        
+
                 <div class="exame-card">
                     <img src="src/images/imagem6.jpg" alt="Consulta de Pediatria">
                     <h3>Pediatria</h3>
@@ -116,24 +91,24 @@
         </section>
 
         <section id="equipe">
-            <h2>Equipe Médica</h2>
+            <h2><i class="fa-solid fa-user-doctor"></i> Equipe Médica</h2>
             <p class="section-description">
                 Conheça alguns dos profissionais que cuidam da sua saúde com dedicação e excelência.
             </p>
-        
+
             <div class="equipe-container">
                 <div class="equipe-card">
                     <img src="src/images/medico1.jpg" alt="Dra. Ana Souza">
                     <h3>Dra. Ana Souza</h3>
                     <p>Cardiologista com mais de 10 anos de experiência em prevenção e tratamento de doenças do coração.</p>
                 </div>
-        
+
                 <div class="equipe-card">
                     <img src="src/images/medico2.jpg" alt="Dr. Pedro Lima">
                     <h3>Dr. Pedro Lima</h3>
                     <p>Ortopedista especializado em lesões esportivas e reabilitação motora.</p>
                 </div>
-        
+
                 <div class="equipe-card">
                     <img src="src/images/medico3.jpg" alt="Dra. Júlia Mendes">
                     <h3>Dra. Júlia Mendes</h3>
@@ -141,26 +116,26 @@
                 </div>
             </div>
         </section>
-    
+
         <section id="locais">
-            <h2>Nossas Localidades</h2>
+            <h2><i class="fa-solid fa-location-dot"></i> Nossas Localidades</h2>
             <p class="section-description">
                 Atendemos em diferentes regiões para estar sempre perto de você.
             </p>
-        
+
             <div class="locais-container">
                 <div class="local-card">
                     <i class="fa-solid fa-map-location"></i>
                     <h3>Brasília - DF</h3>
                     <p>SCN Quadra 05 Bloco F Sala 201</p>
                 </div>
-        
+
                 <div class="local-card">
                     <i class="fa-solid fa-map-location"></i>
                     <h3>Rio de Janeiro - RJ</h3>
                     <p>Rua das Araucárias 223 - Botafogo - RJ</p>
                 </div>
-        
+
                 <div class="local-card">
                     <i class="fa-solid fa-map-location"></i>
                     <h3>Belo Horizonte - MG</h3>
@@ -168,13 +143,13 @@
                 </div>
             </div>
         </section>
-        
+
         <section id="formulario">
-            <h2>Cadastre-se para saber mais!</h2>
+            <h2><i class="fa-regular fa-envelope"></i> Cadastre-se para saber mais!</h2>
             <p class="section-description">
                 Preencha o formulário abaixo para receber novidades e informações sobre a Clínica Vita.
             </p>
-        
+
             <form class="form-container">
                 <input type="text" placeholder="Nome completo" required>
                 <input type="email" placeholder="E-mail" required>
@@ -183,16 +158,15 @@
                 <button type="submit" class="btn-default">Enviar</button>
             </form>
         </section>
-        
-                            
-   </main>
-  
-    <script src="src/javascript/script.js"></script>
+    </main>
+
     <footer id="main_footer">
         <p>
-            2025 © CLINÍCA VITA | DR. MARCUS VINÍCIUS - CRM/UF nº: 55555 - RQE nº: 555
+            <i class="fa-solid fa-heart-pulse"></i> 2025 © CLÍNICA VITA | DR. MARCUS VINÍCIUS - CRM/UF nº: 55555 - RQE nº: 555
         </p>
     </footer>
-    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="src/javascript/script.js"></script>
 </body>
 </html>
